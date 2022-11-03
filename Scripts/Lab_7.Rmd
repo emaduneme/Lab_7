@@ -1,0 +1,41 @@
+---
+title: "Lab_7"
+author: "Laura Gattis, Emmanuel Maduneme, Megan Denneny, Sam Lorenzo"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE,
+                      eval = TRUE,
+                      message = FALSE,
+                      fig.width = 6.5, 
+                      fig.height = 8)
+library(datapasta)
+library(dplyr)
+library(tidyverse)
+library(psych)
+library(skimr)
+library(readr)
+library(janitor)
+library(rio)
+library(here)
+library(palmerpenguins)
+library(ggthemes)
+library(fivethirtyeight)
+library(ggridges)
+library(DT)
+library(tinytex)
+```
+
+
+### Commit 1: Loading Data 
+```{r}
+here()
+star_df <- import(here("Data", "star.csv"), setclass = "tbl_df") %>% 
+  clean_names() %>% 
+  characterize()
+names(star_df)
+```
+
