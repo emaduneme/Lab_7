@@ -1,0 +1,15 @@
+```{r commit 3}
+
+star_df %>% 
+  select(sex, frl, tmathss, treadss) %>% 
+ 
+  group_by(sex, frl) %>% 
+  summarize(math_mean = round(mean(tmathss), digits = 2),
+           math_sd = round(sd(tmathss),digits = 2),
+           rdg_mean = round(mean(treadss), digits = 2),
+           rdg_sd = round(sd(treadss), digits = 2)
+  ) %>% 
+  gt()
+
+  
+```
