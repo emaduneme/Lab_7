@@ -39,7 +39,8 @@ star_df <- import(here("Data", "star.csv"), setclass = "tbl_df") %>%
 names(star_df)
 ```
 
-### Commit2: 
+### Commit2
+Hashtag can be a form of activism [@ofori2018hashtag]. On another issue, according to @peters2022communicating it is essential to communicate climate change in a way that protects our health. 
 
 ### Commit 3
 ```{r commit 3}
