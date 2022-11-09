@@ -60,3 +60,23 @@ star_df %>%
 ```
 
 
+
+### Commit 4
+```{r Commit 4}
+star_df %>% 
+  ggplot(aes(x = totexp, y = tmathss)) +
+  geom_point(col = "Grey") +
+  geom_smooth(aes(col = frl), method = lm) +
+  labs(x = "Teacher Experience(years)",
+         y = "Total Maths Score",
+         title = "Relation between teacher experience and maths scores",
+         subtitle = "Seperate regression lines displayed by free/reduced lunch status") +
+  scale_color_discrete(name = "Lunch Status", labels = c("Free/Reduced Price Meals", "Paid Meals"))+
+   theme(legend.position="bottom") 
+
+```
+
+
+
+\newpage
+# References\centering
