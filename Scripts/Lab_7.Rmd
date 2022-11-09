@@ -25,6 +25,7 @@ library(palmerpenguins)
 library(ggthemes)
 library(fivethirtyeight)
 library(ggridges)
+library(gt)
 library(DT)
 library(tinytex)
 ```
